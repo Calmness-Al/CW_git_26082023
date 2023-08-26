@@ -6,5 +6,15 @@ namespace CW_git_26082023
         {
             InitializeComponent();
         }
+
+        private void btnPush_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Button is pushed");
+        }
+
+        private void btnPush_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Button is pushed");
+        }
     }
 }

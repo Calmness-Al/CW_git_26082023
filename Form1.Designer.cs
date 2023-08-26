@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnPush = new Button();
             SuspendLayout();
+            // 
+            // btnPush
+            // 
+            btnPush.BackColor = Color.Red;
+            btnPush.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPush.Location = new Point(251, 188);
+            btnPush.Name = "btnPush";
+            btnPush.Size = new Size(111, 55);
+            btnPush.TabIndex = 0;
+            btnPush.Text = "Push";
+            btnPush.UseVisualStyleBackColor = false;
+            btnPush.Click += btnPush_Click;
+            btnPush.MouseClick += btnPush_MouseClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(551, 473);
+            ClientSize = new Size(630, 455);
+            Controls.Add(btnPush);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnPush;
     }
 }
